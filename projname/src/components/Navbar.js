@@ -1,11 +1,20 @@
 import React from "react";
+
 import '../styles/Navbar.css';
+import 'bootstrap/dist/css/bootstrap.css'
+
+
 import logo from '../assets/logo1.png';
 import { Link } from "react-router-dom";
-
+import '../styles/style.css'
 function Navbar()
 {
     return(
+
+
+
+
+
         <div className='navbar'> 
         <div className='leftSide'>
             <img src={logo} alt='logo' />

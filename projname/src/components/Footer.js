@@ -1,8 +1,11 @@
 import React from "react";
 import '../styles/Footer.css'
-import FbIcon from '@material-ui/icons/Facebook'
-import InstaIcon from '@material-ui/icons/Instagram'
-import TwitIcon from '@material-ui/icons/Twitter'
+
+import FbIcon       from        '@material-ui/icons/Facebook'
+import InstaIcon    from        '@material-ui/icons/Instagram'
+import TwitIcon     from        '@material-ui/icons/Twitter'
+
+
 function Footer() {
     return(
         <div className= 'footer'>
