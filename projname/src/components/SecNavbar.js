@@ -10,10 +10,10 @@ function SecNavbar()
         <div className='secondNavbar'> 
 
         <div className='leftSide'>
-            <Link to='/'>All</Link>
-            <Link to='/Proccessors'>Proccessors</Link>
-            <Link to='/Accessories'>Accessories</Link>
-            <Link to='/Consoles'>Consoles</Link>
+            <Link to=''>All</Link>
+            <Link to='proccessors'>Proccessors</Link>
+            <Link to='accessories'>Accessories</Link>
+            <Link to='consoles'>Consoles</Link>
         </div>
     </div>
     )
