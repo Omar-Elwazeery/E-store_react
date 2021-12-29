@@ -12,12 +12,7 @@ function Categories()
     return (
         <div>
             <Category/>
-            <Routes>
-             <Route path='/' element={<AllProducts/>}></Route>
-             <Route path='Categories/Accessories' element={<Accessories/>}></Route>
-             <Route path='Categories/Consoles' element={<Consoles/>}></Route>
-             <Route path='Categories/Proccessors' element={<Proccessors/>}></Route>
-      </Routes>
+
         </div>
     )   
 }
