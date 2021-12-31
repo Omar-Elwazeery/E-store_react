@@ -1,11 +1,20 @@
 import React from "react";
+import { ConsolesList } from "../../productParts/productList";
+import ProductItem from "../../productParts/productItem";
 
 function Consoles()
 {
     return(
-        <div>
-            console
+        <div className="container">
+        <h3 className="text-left py-2" id="pro">Consoles</h3>
+        <div className="row justify-content-center text-left" >
+        {ConsolesList.map((pl)=>{
+                return (
+                    <ProductItem image={pl.image} name={pl.name} price={pl.price} description={pl.description}></ProductItem>
+                )
+            })}
         </div>
+    </div>
     );
 }
 
