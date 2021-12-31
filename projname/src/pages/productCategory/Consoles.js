@@ -4,7 +4,7 @@ function Consoles()
 {
     return(
         <div>
-            accccccccccccccccccoooooooooo
+            console
         </div>
     );
 }

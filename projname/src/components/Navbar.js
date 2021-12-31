@@ -13,8 +13,8 @@ function Navbar()
         <div className='rightSide'>
             <Link to='/'>Home</Link>
             <Link to='/Categories'>Categories</Link>
-            <Link to='/About'>About</Link>
-            <Link to='/Contact'>Contact</Link>
+            <Link to='/about'>About</Link>
+            <Link to='/contact'>Contact</Link>
         </div>
     </div>
     )

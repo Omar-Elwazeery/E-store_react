@@ -12,8 +12,14 @@ function Categories()
     return (
         <div>
             <Category/>
-
+            <Routes>
+             <Route path='/' element={<AllProducts/>}></Route>
+             <Route path='/accessories' element={<Accessories/>}></Route>
+             <Route path='/consoles' element={<Consoles/>}></Route>
+             <Route path='/proccessors' element={<Proccessors/>}></Route>
+      </Routes>
         </div>
     )   
 }
+
 export default Categories;

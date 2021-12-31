@@ -1,10 +1,12 @@
 import React from "react";
+import { ProccessorsList } from "../../productParts/productList";
+
 
 function Proccessors()
 {
     return(
         <div>
-            acccccccccccccccccc
+            proccc
         </div>
     );
 }
