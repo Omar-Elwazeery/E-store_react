@@ -8,7 +8,7 @@ export let AllList = [
        description : 'lorem apso kkppok owheo he wheoihr ohwopkl w k k w ',  
     },
     {
-        name:"ryzon 1700",
+        name:"ryzen 1700",
         image: './imgs/2.png' ,
         price :3000,
         description : 'lorem apso kkppok owheo he wheoihr ohwopkl w k k w ',  

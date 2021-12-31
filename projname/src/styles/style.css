@@ -1,3 +1,15 @@
+/* open-sans-regular - latin - modern browsers  */
+@font-face {
+    font-family: 'cairo';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../assets/fonts/cairo.ttf')
+}
+ 
+body { 
+        font-family: 'cairo';  
+}
 html, body, #root  , #root {
     height: 100%;
   }
@@ -152,4 +164,7 @@ a:hover {
 }
 .card   img{
     height: 60%;
+}
+.leftSide{
+    margin: auto;
 }

@@ -7,12 +7,12 @@ function SecNavbar()
 {    
     return(
         <div className='secondNavbar'>
-        <div className='leftSide'>
-            <Link to=''>All</Link>
-            <Link to='proccessors'>Proccessors</Link>
-            <Link to='accessories'>Accessories</Link>
-            <Link to='consoles'>Consoles</Link>
-        </div>
+            <div className='leftSide'>
+                <Link to=''>All</Link>
+                <Link to='proccessors'>Proccessors</Link>
+                <Link to='accessories'>Accessories</Link>
+                <Link to='consoles'>Consoles</Link>
+            </div>
     </div>
     )
 }
