@@ -13,7 +13,7 @@ function AllProducts()
                     
                 {AllList.map((pl)=>{
                         return (
-                            <ProductItem image={pl.image} name={pl.name} price={pl.price} description={pl.description}></ProductItem>
+                            <ProductItem id={pl.id} image={pl.image} name={pl.name} price={pl.price} description={pl.description}></ProductItem>
                         )
                     })}
                 </div>

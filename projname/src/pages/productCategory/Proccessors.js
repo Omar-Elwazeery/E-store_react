@@ -12,7 +12,7 @@ function Proccessors()
                 <div className="row justify-content-center text-left" >
                 {ProccessorsList.map((pl)=>{
                         return (
-                            <ProductItem image={pl.image} name={pl.name} price={pl.price} description={pl.description}></ProductItem>
+                            <ProductItem id={pl.id} image={pl.image} name={pl.name} price={pl.price} description={pl.description}></ProductItem>
                         )
                     })}
                 </div>

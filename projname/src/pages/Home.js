@@ -4,7 +4,7 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/lib/styles.css'; //Allows for server-side rendering.
 import 'react-owl-carousel2/src/owl.theme.default.css';
 import {AllList} from '../productParts/productList';
-
+import ProductItem from "../productParts/productItem";
 function Home() 
 {
 //     const item = [
@@ -43,11 +43,11 @@ function Home()
 // ]; 
       
     const options = {
-        items:4,
+        items:5,
         nav: true,
         rewind: true,
         autoplay: true,
-        margin:7,
+        margin:2,
         loop:true,
         autoplay:true,
         autoplayTimeout:1000,
@@ -58,16 +58,22 @@ function Home()
     return (
         <div className="Content">             
             {/* // Start Slider  */}
-            <OwlCarousel options={options} >
-                {
-                    AllList.map((item,key)=>{
-                        return <div className="owl-item">
-                            <img className="product_image" src={item.image} />
-                            <a className="product_title">{item.name}</a>
-                        </div>
-                    })
-                }
-            </OwlCarousel>
+            <div class="slider">
+                <OwlCarousel options={options} >
+                    {
+                        AllList.map((item,key)=>{
+                            return <div className="owl-item">
+                                <div class="product_image">
+                                    <img src={item.image} />
+                                </div>
+                                <div class="product_title">
+                                    <a href="#">{item.name}</a>
+                                </div>
+                            </div>
+                        })
+                    }
+                </OwlCarousel>
+            </div>
                 <br />
             {/* Start products */}
             <div className="container ">
@@ -77,22 +83,30 @@ function Home()
                     {
                         AllList.map((item,key)=>{
                             return(
-                                <div className="card col-md-3 text-center" >
-                                <img src={item.image} className="card-img-top" alt="..." />
-                                <div className="card-body d-flex flex-column">
-                                    <h5 className="card-title">{item.name}</h5>
-                                    <p className="card-text">{item.price} L.E<br/> </p>
-                                    <a href="#" className="btn btn-primary buy-button  ">Buy now</a>
-                                </div>
-                            </div>
+                                <ProductItem id={item.id} image={item.image} name={item.name} price={item.price} description={item.description}></ProductItem>
+
+
+                            //     <div className="card col-md-3 text-center" >
+                            //     <img src={item.image} className="card-img-top" alt="..." />
+                            //     <div className="card-body d-flex flex-column">
+                            //         <h5 className="card-title">{item.name}</h5>
+                            //         <p className="card-text">{item.price} L.E<br/> </p>
+                            //         <a href="#" className="btn btn-primary buy-button  ">Buy now</a>
+                            //     </div>
+                            // </div>
                             );
-                            
                         })
                     }
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
+
+
 
 
     )   

@@ -168,3 +168,8 @@ a:hover {
 .leftSide{
     margin: auto;
 }
+.product_details{
+    margin: auto 0;
+    padding: 0 19px;
+
+}
