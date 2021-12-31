@@ -3,51 +3,51 @@ import React from "react";
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/lib/styles.css'; //Allows for server-side rendering.
 import 'react-owl-carousel2/src/owl.theme.default.css';
-
+import {AllList} from '../productParts/productList';
 
 function Home() 
 {
-    const item = [
-        {
-            img: './imgs/1.png',
-            name: 'Cooling',
-        },
-        {
-            img: './imgs/2.png',
-            name: 'Ryzen',
-        },
-        {
-            img: './imgs/3.png',
-            name: 'pc bundle',
-        },
-        {
-            img: './imgs/4.png',
-            name: 'headset',
-        },
-        {
-            img: './imgs/1.png',
-            name: 'Cooling',
-        },
-        {
-            img: './imgs/2.png',
-            name: 'Ryzen',
-        },
-        {
-            img: './imgs/3.png',
-            name: 'pc bundle',
-        },
-        {
-            img: './imgs/4.png',
-            name: 'headset',
-        },
-]; 
+//     const item = [
+//         {
+//             img: './imgs/1.png',
+//             name: 'Cooling',
+//         },
+//         {
+//             img: './imgs/2.png',
+//             name: 'Ryzen',
+//         },
+//         {
+//             img: './imgs/3.png',
+//             name: 'pc bundle',
+//         },
+//         {
+//             img: './imgs/4.png',
+//             name: 'headset',
+//         },
+//         {
+//             img: './imgs/1.png',
+//             name: 'Cooling',
+//         },
+//         {
+//             img: './imgs/2.png',
+//             name: 'Ryzen',
+//         },
+//         {
+//             img: './imgs/3.png',
+//             name: 'pc bundle',
+//         },
+//         {
+//             img: './imgs/4.png',
+//             name: 'headset',
+//         },
+// ]; 
       
     const options = {
         items:4,
         nav: true,
         rewind: true,
         autoplay: true,
-        margin:10,
+        margin:7,
         loop:true,
         autoplay:true,
         autoplayTimeout:1000,
@@ -60,9 +60,9 @@ function Home()
             {/* // Start Slider  */}
             <OwlCarousel options={options} >
                 {
-                    item.map((item,key)=>{
+                    AllList.map((item,key)=>{
                         return <div className="owl-item">
-                            <img className="product_image" src={item.img} />
+                            <img className="product_image" src={item.image} />
                             <a className="product_title">{item.name}</a>
                         </div>
                     })
@@ -75,13 +75,13 @@ function Home()
                     <h3 className="text-left py-2" id="pro">Products</h3>
                     <div className="row justify-content-center text-left">
                     {
-                        item.map((item,key)=>{
+                        AllList.map((item,key)=>{
                             return(
                                 <div className="card col-md-3 text-center" >
-                                <img src={item.img} className="card-img-top" alt="..." />
+                                <img src={item.image} className="card-img-top" alt="..." />
                                 <div className="card-body d-flex flex-column">
                                     <h5 className="card-title">{item.name}</h5>
-                                    <p className="card-text">25 L.E <br/> </p>
+                                    <p className="card-text">{item.price} L.E<br/> </p>
                                     <a href="#" className="btn btn-primary buy-button  ">Buy now</a>
                                 </div>
                             </div>

@@ -117,9 +117,10 @@ a:hover {
     position: relative;
     background-color: #f0f0f0;
 }
- .owl-item img  {
-    max-height: 340px;
+.owl-item img  {
+    max-height: 240px;
     /* max-width: 289px; */
+    padding: 13px;
 }    
 .owl-item{
     margin: auto;
@@ -129,7 +130,7 @@ a:hover {
     color: black;
 }
 .product_image {
-    min-height: 340px;
+    min-height: 243px;
 
 }
 .product_title{
