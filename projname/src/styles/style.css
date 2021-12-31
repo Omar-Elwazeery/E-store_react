@@ -86,7 +86,7 @@ a:hover {
     bottom: 0;
 }
 .card   img{
-   min-height: 253px;
+   /* min-height: 253px; */
 
 }
 .login-container{
@@ -151,19 +151,17 @@ a:hover {
     bottom: 0;
 }
 
-.product .card
-{
-  display: inline-block;
-  margin: 17px;
 
-}
  
 .card .card-body{
-    position: relative;
-    bottom: 0;
+    margin: 36px;
+
 }
 .card   img{
-    height: 60%;
+    /* position: relative;
+    bottom: 104px; */
+    margin-bottom: 44px;
+
 }
 .leftSide{
     margin: auto;

@@ -7,41 +7,6 @@ import {AllList} from '../productParts/productList';
 import ProductItem from "../productParts/productItem";
 function Home() 
 {
-//     const item = [
-//         {
-//             img: './imgs/1.png',
-//             name: 'Cooling',
-//         },
-//         {
-//             img: './imgs/2.png',
-//             name: 'Ryzen',
-//         },
-//         {
-//             img: './imgs/3.png',
-//             name: 'pc bundle',
-//         },
-//         {
-//             img: './imgs/4.png',
-//             name: 'headset',
-//         },
-//         {
-//             img: './imgs/1.png',
-//             name: 'Cooling',
-//         },
-//         {
-//             img: './imgs/2.png',
-//             name: 'Ryzen',
-//         },
-//         {
-//             img: './imgs/3.png',
-//             name: 'pc bundle',
-//         },
-//         {
-//             img: './imgs/4.png',
-//             name: 'headset',
-//         },
-// ]; 
-      
     const options = {
         items:5,
         nav: true,
@@ -53,8 +18,6 @@ function Home()
         autoplayTimeout:1000,
         autoplayHoverPause:true,
     };
-     
-
     return (
         <div className="Content">             
             {/* // Start Slider  */}
@@ -84,16 +47,6 @@ function Home()
                         AllList.map((item,key)=>{
                             return(
                                 <ProductItem id={item.id} image={item.image} name={item.name} price={item.price} description={item.description}></ProductItem>
-
-
-                            //     <div className="card col-md-3 text-center" >
-                            //     <img src={item.image} className="card-img-top" alt="..." />
-                            //     <div className="card-body d-flex flex-column">
-                            //         <h5 className="card-title">{item.name}</h5>
-                            //         <p className="card-text">{item.price} L.E<br/> </p>
-                            //         <a href="#" className="btn btn-primary buy-button  ">Buy now</a>
-                            //     </div>
-                            // </div>
                             );
                         })
                     }
@@ -101,14 +54,6 @@ function Home()
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
     )   
     
 }
