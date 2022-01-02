@@ -1,8 +1,17 @@
 import React from "react";
-
-
+import Swal from 'sweetalert2'
 function Contact() 
 {
+    const successAlert = (e) => {
+        e.preventDefault();
+
+        Swal.fire({  
+            title: '👍',  
+            text: 'message sent successfully',
+            icon: 'success'
+          }); 
+    }
+    
     return (
         <div>
 <div>
@@ -55,17 +64,17 @@ function Contact()
                 <fieldset>
                     <legend id="show_err"></legend>
                     <legend>Contact Us</legend>
-                    <div class="form-group required">
+                    <div class="form-group ">
                         <label class="col-sm-4 control-label" for="input-name">Your Name</label>
                         <div class="col-sm-10">
-                            <input type="text" name="name" value="" id="input-name" class="form-control"
+                            <input type="text" name="name"  id="input-name" class="form-control"
                                 required="required"/>
                         </div>
                     </div>
                     <div class="form-group required">
                         <label class="col-sm-4 control-label" for="input-email">E-Mail Address</label>
                         <div class="col-sm-10">
-                            <input type="text" name="email" value="" id="input-email" class="form-control"
+                            <input type="text" name="email"  id="input-email" class="form-control"
                                 required="required"/>
                         </div>
                     </div>
@@ -73,7 +82,7 @@ function Contact()
                     <div class="form-group required">
                         <label class="col-sm-4 control-label" for="input-email">Phone</label>
                         <div class="col-sm-10">
-                            <input type="text" name="phone" value="" id="input-phone" class="form-control"
+                            <input type="text" name="phone" id="input-phone" class="form-control"
                                 required="required"/>
                         </div>
                     </div>
@@ -87,7 +96,7 @@ function Contact()
 
                     <div class="form-group">
                         <div class="col-sm-10">
-                            <button class="btn btn-primary buttonGray " id="submit" type="submit">
+                            <button class="btn btn-primary buttonGray " id="submit" type="submit" onClick={successAlert}>
                                 Submit
                             </button>
                         </div>

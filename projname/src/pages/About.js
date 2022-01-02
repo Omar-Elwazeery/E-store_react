@@ -1,6 +1,7 @@
 import React from "react";
 
 function About() {
+ 
   const team = [
     {
       img: "../imgs/1.jpg",
@@ -34,10 +35,24 @@ function About() {
     },
   ];
   return (
+         
+         
+           
     <div className="Content">
       <div className="container ">
         <div className="product">
         <div className="row justify-content-center text-left">
+        
+        <p id="para">
+            
+            <h1 id="para2">Who we are</h1>
+            <h4>
+            we are a website that is concerned about serving the customers and helping them with getting experience
+            with the hardware and everything related to the computers whether it's accessories,processors or consoles
+            and helping the users to choose the best products for them and assembling their PCs.
+            </h4>
+            </p>
+        <h1 className="text" >Our Team </h1>
             {team.map((team, key) => {
               return (
                   <div className="card col-md-3">
